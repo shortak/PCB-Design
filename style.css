@@ -113,17 +113,31 @@ ul{
 /*------------------Header------------------*/
 /*------------------------------------------*/
 
-header{
+
+.background-image{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)), url(images/header3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title-header{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)), url(images/header3.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
+.title-div{
+    transform: translateX(0%);
+    transition: transform .1s linear;
+}
+
 header .row {
     width: 100%;
+    position: relative;
 }
 
 .header_link{
