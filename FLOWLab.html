@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sarthak Samal: FLOWLab
+    </title>
+    <link rel="icon" type="image/x-icon" href="/images/heart_circuit.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleFLOWLab.css"/>
+</head>
+<body>
+    <div class="background-image">
+    <header class = "title-header">
+        <div class="navigation navdiv">
+            <div class="row navdiv">
+                <nav>
+                    <div class="navigation_overlay navdiv"></div>
+                    <div class="dropdown">
+                        <a class="header_link" onmouseover="toggleMenu(event)" onmouseleave="closeMenu(event)" href="#Work">Work</a>
+                        <div class="dropdown-content contentdiv">
+                            <a href="PCB.html">PCB Design</a>
+                            <a href="FLOWLab.html">FLOWLab</a>
+                            <a href="PersonalProj.html">Personal Projects</a>
+                        </div>
+                    </div>
+                    <a class="header_link" href="">Clients</a>
+                    <a class="header_link" href="index.html#AboutMe">About</a>
+
+                    <!--Dropdown for Contact-->
+                    <div class="dropdown">
+                        <a class="header_link" onmouseover="toggleMenu(event)" onmouseleave="closeMenu(event)">Contact</a>
+                        <div class="dropdown-content contentdiv">
+                            <div>
+                                <a href="mailto:sarthak.samal2001@gmail.com" target="_blank" rel="noopener noreferrer"><img src="images/gmail_logo.webp">&nbsp;&nbsp;Gmail</a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/sarthaksamal24" target="_blank" rel="noopener noreferrer"><img src="images/linkedlin_logo.png">&nbsp;&nbsp;LinkedIn</a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/shortak" target="_blank" rel="noopener noreferrer"><img src="images/github_logo.webp">&nbsp;&nbsp;Github</a>
+                            </div> 
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row header-text-container title-div">
+            <div class="title-div slide-in">
+                <h1>FLOWLab</h1>
+                <p></p>
+                <a href="index.html" class = "btn"> &larr; Home</a>
+            </div>
+        </div>
+    </header>
+    </div>  
+
+     <!--My Work-->
+     <hr />
+     <section class="work-section" id="Work">
+         <div class="row">
+             <h2>My Work</h2>
+             <!--Start of simvascular-->
+             <div class="work-box">
+                 <div class="work-box-text hidden">
+                     <h3>Simvascular Modeling</h3>
+                     <p>Using CAD software to create 3D models of the cardiovascular system from the chest to brain for CFD simulations.</p>
+                     <p><u>Skills Demonstrated:</u></p>
+                     <ul>
+                         <li>Image Segmentation</li>
+                         <li>CAD Biological Systems</li>
+                         <li>CFD Simulations</li>
+                         <li>Simulation Software</li>
+                         <li>Image Stack Concatenation</li>  
+                     </ul>
+                     <div class="report-btns">
+                         
+                             <a class="work-btn" target="_blank" rel="noopener noreferrer" href="Reports/555_Timer.pdf">View Report (PDF)</a>
+                         
+                         <div class="dropdown">
+                             <a class="dropbtn" onmouseover="toggleMenu(event)" onmouseleave="closeMenu(event)">Supplemental Learning&nbsp; v</a>
+                             <div class="dropdown-content">
+                                 <a target="_blank" rel="noopener noreferrer" href="Reports/Supp Info/Board 1/PDN_Noise.pdf">PDN Noise and Decoups</a>
+                                 <a target="_blank" rel="noopener noreferrer" href="Reports/Supp Info/Board 1/MaxCurrent_TraceResistance.pdf">Curent Limits and Trace Resistance</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="work-box-image work-box-child hidden">
+                     <img src="images/Cardiovasc_Model.jpg" alt="555 Timer">
+                 </div>
+             </div>
+             <!--End of simvascular-->
+             <br /><br />
+             <hr />
+         </div>
+     </section>
+    <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,3 @@
-/*------------------------------------------*/
-/*----------------Basic Setup---------------*/
-/*------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +16,7 @@ html {
     --off-white: #ffffffc6;
     --gray: #ffffffab;
     --blue: #31baff;
+
 
     --nav-height: 8rem;
 
@@ -61,15 +59,15 @@ a{
     text-decoration: none;
 }
 
-.title-btn {
+.btn {
     display: inline-block;
     padding: 1.2rem 4rem;
-    border: 1px solid var(--pink);
+    border: 1px solid var(--blue);
     font-size: 2.2rem;
 }
 
-.title-btn:hover{
-    background-color: var(--pink);
+.btn:hover{
+    background-color: var(--blue);
     transition: 0.3s;
 }
 
@@ -98,7 +96,7 @@ h2::after {
     height: .3rem;
     width: 12rem;
     margin-top: 1rem;
-    background-color:var(--pink);
+    background-color:var(--blue);
 
 }
 
@@ -117,10 +115,11 @@ ul{
 
 .background-image{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)), url(images/header3.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(images/FLOWLab-Background.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    z-index: -1;
 }
 
 .title-header{
@@ -156,7 +155,7 @@ header .row {
     height: 3px; /* Height of the underline */
     bottom: 0; /* Align to bottom */
     left: 0; /* Align to left */
-    background-color: var(--pink); /* Background color of the underline */
+    background-color: var(--blue); /* Background color of the underline */
     transform-origin: bottom right; /* Set transform origin */
     transition: transform 0.25s ease-out; /* Transition effect for the underline */
 }
@@ -232,65 +231,20 @@ h1 {
     font-size: var(--fs-h1); 
 }
 
-/*------------------------------------------*/
-/*------------------My Work-----------------*/
-/*------------------------------------------*/
 
-.work-section{
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)) , url(images/Main-Work_Background_upscaled.jpg);
-    background-size: cover;
-}
-
-.work-box{
-    display: flex;
-    align-items: center;
-    gap: var(--gutter-large);
-    margin-top: var(--gutter-x-small);
-}
-
-.work-box-child:nth-child(2){
-    transition-delay: 200ms;
-}
-
-.work-box-child:nth-child(3){
-    transition-delay: 400ms;
-}
-
-
-.work-box-text{
-    background-color: rgba(0,0,0,.6);
-    padding: 4rem;
-    border-radius: 2.5rem;
-}
-
-.work-box-text > *{
-    margin-top: var(--gutter-xx-small);
-    font-size: 1.5rem;
-    color: var(--gray);
-}
-
-.work-box-text h3{
-    font-size: var(--fs-h3);
-    color: var(--off-white);
-}
-
-.btn{
-    display: flex;
-    gap: var(--gutter-xx-small);
-}
 
 /* Dropdown Button */
 .dropbtn {
     cursor: pointer;
     display: flex;
     padding: 1.2rem 2rem;
-    border: .1rem solid var(--pink);
+    border: .1rem solid var(--blue);
 
 }
 
 /* Transition color on hover INCLUDE .dropbtn TO MAKE SURE IT STAYS TRANSITIONING */
 .dropdown:hover .dropbtn{
-    background-color: var(--pink);
+    background-color: var(--blue);
     transition: .3s;
 }
 
@@ -321,7 +275,7 @@ h1 {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    border: .1rem solid var(--pink);
+    border: .1rem solid var(--blue);
 }
 
 
@@ -330,144 +284,70 @@ h1 {
     display:block;
 }
 
+/*My Work*/
 
-.work-box-image{
-    display: flex;
-    text-align: center;
-    height: 50rem;
-    width: 50rem;
+.work-section{
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,1)) , url(images/FLOWLab-Background-Extended.jpg);
 }
 
-
-.work-btn{
-    display: inline-block;
-    padding: 1.2rem 2rem;
-    border: .1rem solid var(--pink);
-}
-
-.work-btn:hover{
-    background-color: var(--pink);
-    transition: 0.3s;
-}
-
-/*Image Carousel*/
-
-.carousel {
-    position: relative;
-    width: 50rem;
-    height: 50rem;
-}
-
-.carousel > ul {
-    margin: 0;
-    padding: 0;
-    width: 60rem;
-    height:60rem;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    
-
-}
-
-.slide {
-    position: absolute;
+.work-box{
     display: flex;
     align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: 200ms all ease-in-out;
-    transition-delay: 50ms;
-    height: 100%;
+    gap: var(--gutter-large);
+    margin-top: var(--gutter-x-small);
+}
+
+.work-box-child:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.work-box-child:nth-child(3){
+    transition-delay: 400ms;
+}
+
+
+.work-box-text{
+    background-color: rgba(0,0,0,.6);
+    padding: 4rem;
+    border-radius: 2.5rem;
+    width: 100%;
+}
+
+.work-box-text > *{
+    margin-top: var(--gutter-xx-small);
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+
+.work-box-text h3{
+    font-size: var(--fs-h3);
+    color: var(--off-white);
+}
+
+.report-btns{
+    display: flex;
+    gap: var(--gutter-xx-small);
+}
+
+
+.work-box-image {
+    min-width: 50rem;
+    min-height: 50rem;
+}
+
+.work-box-image img{
+    object-fit: contain;
     width: 100%;
 
 }
 
-.slide > img {
-    display: block;
-    /*transform: translateY(50%);*/
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
+.work-btn{
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    border: .1rem solid var(--blue);
 }
 
-.slide[data-active] {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    transition-delay: 0ms;
-    z-index: 1;
-}
-
-.carousel-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 100%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
-    cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.carousel-button:hover, .carousel-button:focus {
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.carousel-button:focus {
-    outline: .1rem solid black;
-}
-
-.carousel-button.prev{
-    left: 2rem;
-}
-
-.carousel-button.next {
-    right: 2rem;
-}
-
-
-/*------------------------------------------*/
-/*-----------------About Me-----------------*/
-/*------------------------------------------*/
-
-.about-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 1) , rgba(0, 0, 0, .1)), url(images/AboutMe_img.jpg); 
-    background-size: cover;
-}
-
-.about{
-    display: flex;
-    gap: var(--gutter-huge);
-    margin-top: var(--gutter-large);
-}
-
-.aboutchild:nth-child(1){
-    transition-delay: 200ms;
-}
-
-.aboutchild:nth-child(2){
-    transition-delay: 400ms;
-}
-
-.about-text{
-    background-color: rgba(0,0,0,.6);
-    padding: 4rem;
-    border-radius: 2.5rem;
-}
-
-.about-img img{
-    max-width: 550px;
-    object-fit: contain;
-    padding-top: 4rem;
-}
-
-.about-text p{
-    margin-bottom: var(--gutter-x-small);
+.work-btn:hover{
+    background-color: var(--blue);
+    transition: 0.3s;
 }
